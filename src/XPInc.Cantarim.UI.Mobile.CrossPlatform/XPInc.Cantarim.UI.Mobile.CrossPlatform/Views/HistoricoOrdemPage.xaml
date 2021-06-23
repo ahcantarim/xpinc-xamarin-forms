@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="XPInc.Cantarim.UI.Mobile.CrossPlatform.Views.HistoricoOrdemPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:XPInc.Cantarim.UI.Mobile.CrossPlatform.Models"
+             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.UI.Views;assembly=Xamarin.CommunityToolkit"
+             BackgroundColor="#1A202E">
+
+    <StackLayout Margin="24" Spacing="4">
+
+        <!--  Título  -->
+        <Label Padding="24,4"
+               BackgroundColor="#283142"
+               FontSize="Title"
+               Text="Histórico"
+               TextColor="#E7E7E7" />
+
+        <!--  Painel  -->
+        <xct:Expander IsExpanded="True" VerticalOptions="FillAndExpand">
+            <xct:Expander.Header>
+                <!--  Título  -->
+                <StackLayout Padding="16,4"
+                             BackgroundColor="#283142"
+                             Orientation="Horizontal"
+                             Spacing="8">
+                    <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" Spacing="8">
+                        <Image Source="expand.png" VerticalOptions="Center">
+                            <Image.Triggers>
+                                <DataTrigger Binding="{Binding Source={RelativeSource AncestorType={x:Type xct:Expander}}, Path=IsExpanded}" TargetType="Image" Value="True">
+                                    <Setter Property="Source" Value="collapse.png" />
+                                </DataTrigger>
+                            </Image.Triggers>
+                        </Image>
+                        <Label FontSize="Micro"
+                               Text="ORDENS EM ABERTO"
+                               TextColor="#727B8C"
+                               VerticalOptions="Center" />
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="End"
+                                 Orientation="Horizontal"
+                                 Spacing="16"
+                                 VerticalOptions="Center">
+                        <Label FontSize="Caption" Text="{Binding TotalQuantidade, StringFormat='TOTAL QUANTIDADE: {0}'}" TextColor="#727B8C" />
+                        <Label FontSize="Caption" Text="{Binding TotalQuantidadeDisponivel, StringFormat='TOTAL DISPONÍVEL: {0}'}" TextColor="#727B8C" />
+                        <!--<Label FontSize="Caption" Text="TOTAL DISPONÍVEL: 0" TextColor="#727B8C" />-->
+                    </StackLayout>
+                </StackLayout>
+            </xct:Expander.Header>
+
+            <!--  Conteúdo  -->
+            <StackLayout Margin="0,8,0,0">
+                <ListView Header="-" ItemsSource="{Binding OrdemCollection}">
+                    <!--  Cabeçalho  -->
+                    <ListView.HeaderTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="100" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+
+                                <Label Grid.Column="0"
+                                       FontSize="Caption"
+                                       Text="DATA E HORA"
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="1"
+                                       FontSize="Caption"
+                                       Text="ASSESSOR"
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="2"
+                                       FontSize="Caption"
+                                       Text="CONTA"
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="3"
+                                       FontSize="Caption"
+                                       Text="ATIVO"
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="4"
+                                       FontSize="Caption"
+                                       Text="TIPO"
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="5"
+                                       FontSize="Caption"
+                                       Text="QTD."
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="6 "
+                                       FontSize="Caption"
+                                       Text="QTD. APARENTE"
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="7"
+                                       FontSize="Caption"
+                                       Text="QTD. DISP."
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="8"
+                                       FontSize="Caption"
+                                       Text="QTD. CANCEL."
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="9"
+                                       FontSize="Caption"
+                                       Text="QTD. EXEC."
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="10"
+                                       FontSize="Caption"
+                                       Text="VALOR"
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="11"
+                                       FontSize="Caption"
+                                       Text="VALOR DISP."
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="12"
+                                       FontSize="Caption"
+                                       Text="OBJETIVO"
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="13"
+                                       FontSize="Caption"
+                                       Text="OBJ. DISP."
+                                       TextColor="#9096A4" />
+                                <Label Grid.Column="14"
+                                       FontSize="Caption"
+                                       Text="REDUÇÃO"
+                                       TextColor="#9096A4" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.HeaderTemplate>
+                    <!--  Conteúdo  -->
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="models:OrdemModel">
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="150" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                        <ColumnDefinition Width="100" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <Label Grid.Column="0"
+                                           FontSize="Caption"
+                                           Text="{Binding DataHora}"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="1"
+                                           FontSize="Caption"
+                                           Text="{Binding Assessor}"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="2"
+                                           FontSize="Caption"
+                                           Text="{Binding Conta}"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="3"
+                                           FontSize="Caption"
+                                           Text="{Binding Ativo}"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="4"
+                                           FontSize="Caption"
+                                           Text="{Binding Tipo}"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="5"
+                                           FontSize="Caption"
+                                           Text="{Binding Quantidade}"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="6 "
+                                           FontSize="Caption"
+                                           Text="-"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="7"
+                                           FontSize="Caption"
+                                           Text="{Binding QuantidadeDisponivel}"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="8"
+                                           FontSize="Caption"
+                                           Text="-"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="9"
+                                           FontSize="Caption"
+                                           Text="{Binding QuantidadeExecutada}"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="10"
+                                           FontSize="Caption"
+                                           Text="{Binding Valor, StringFormat='{0:C}'}"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="11"
+                                           FontSize="Caption"
+                                           Text="{Binding Valor, StringFormat='{0:C}'}"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="12"
+                                           FontSize="Caption"
+                                           Text="-"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="13"
+                                           FontSize="Caption"
+                                           Text="-"
+                                           TextColor="#FAD165" />
+                                    <Label Grid.Column="14"
+                                           FontSize="Caption"
+                                           Text="-"
+                                           TextColor="#FAD165" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </xct:Expander>
+    </StackLayout>
+
+</ContentPage>

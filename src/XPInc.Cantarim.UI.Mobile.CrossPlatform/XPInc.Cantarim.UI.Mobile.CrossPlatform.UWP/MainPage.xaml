@@ -1,0 +1,7 @@
+﻿<forms:WindowsPage x:Class="XPInc.Cantarim.UI.Mobile.CrossPlatform.UWP.MainPage"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:forms="using:Xamarin.Forms.Platform.UWP"
+                   Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" />
+</forms:WindowsPage>
