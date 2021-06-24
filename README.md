@@ -40,12 +40,12 @@
             <li><a href="#clonando-o-repositório">Clonando o repositório</a></li>
         </ul>
     </li>
-    <li><a href="#">Estrutura da aplicação</a></li>
-    <li><a href="#">Execução da aplicação</a></li>
-    <li><a href="#">Teste de aumento de carga</a></li>
-    <li><a href="#">Testes unitários</a></li>
-    <li><a href="#">Análise de cobertura de código</a></li>
-    <li><a href="#">Análise de performance</a></li>
+    <li><a href="#estrutura-da-aplicação">Estrutura da aplicação</a></li>
+    <li><a href="#execução-da-aplicação">Execução da aplicação</a></li>
+    <li><a href="#teste-de-aumento-de-carga">Teste de aumento de carga</a></li>
+    <li><a href="#testes-unitários">Testes unitários</a></li>
+    <li><a href="#análise-de-cobertura-de-código">Análise de cobertura de código</a></li>
+    <li><a href="#análise-de-performance">Análise de performance</a></li>
     <li><a href="#licença">Licença</a></li>
     <li><a href="#contato">Contato</a></li>
 </ol>
@@ -86,7 +86,7 @@ Desafio composto pelas etapas abaixo:
 
 ### Tecnologias utilizadas
 
-* [Xamarin.Forms](https://docs.microsoft.com/pt-br/xamarin/xamarin-forms/)
+* [Xamarin.Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/)
 * [UWP](https://docs.microsoft.com/en-us/archive/msdn-magazine/2016/connect/xamarin-xamarin-and-the-universal-windows-platform)
 * [WPF](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/platform/other/wpf)
 * [Coverlet](https://github.com/coverlet-coverage/coverlet)
@@ -117,8 +117,11 @@ A solução está dividida em quatro projetos, conforme imagem:
 [![Solution Explorer][screenshot-solution-explorer]][screenshot-solution-explorer]
 
 - `XPInc.Cantarim.UI.Mobile.CrossPlatform`: projeto cross-platform com alto nível de compartilhamento de código entre as plataformas alvo.
+
 - `XPInc.Cantarim.UI.Mobile.CrossPlatform.UWP`: projeto alvo para UWP (Universal Windows Platform).
+
 - `XPInc.Cantarim.UI.Mobile.CrossPlatform.WPF`: projeto alvo para WPF (Windows Presentation Foundation).
+
 - `XPInc.Cantarim.UI.Mobile.CrossPlatform.Test`: projeto para testes de unidade do código cross-platform.
 
 ## Execução da aplicação
@@ -130,8 +133,10 @@ A cada 50 milissegundos é simulada uma alteração no histórico de ordens.
 Nessa simulação, sorteia-se uma ação a ser realizada:
 
 - **Incluir nova ordem**: uma nova ordem aleatória é adicionada à listagem, com `Quantidade Executada` zerada.
+
 - **Alterar ordem existente**: sorteia-se um número de ordens que serão alteradas e, para cada ordem sorteada, a `Quantidade Executada` é incrementada de forma aleatória. Ordens totalmente executadas (`Quantidade Executada = Quantidade`) são removidas da listagem, enquanto ordens parcialmente executadas (`Quantidade Executada < Quantidade`) continuam sendo exibidas, mas com valores atualizados em tela.
-- **Ambos**: as ações anteriores são executadas mais vezes que seriam comumente.
+
+- **Ambos**: as ações anteriores são executadas mais vezes do que seriam comumente.
 
 
 #### Exemplo da execução do projeto alvo UWP
@@ -151,7 +156,9 @@ O método responsável por simular alterações no histórico de ordens, sorteia
 Essa quantidade pode ser grande ou pequena e, para facilitar a análise, um `log` foi escrito neste momento para exibir:
 
 - A quantidade atual de ordens no histórico;
+
 - A quantidade de ordens que deverão ser alteradas, com base no sorteio prévio;
+
 - A quantidade atualizada de ordens no histórico, desconsiderando ordens que após a alteração podem ter sido totalmente executadas;
 
 Conforme imagem, nota-se que existem momentos em que a quantidade de ordens alteradas é relativamente grande quando comparada com a quantidade de ordens existentes, simulando assim um aumento na carga de processamento e na atualização da tela:
@@ -207,7 +214,7 @@ André Cantarim
 [issues-shield]: https://img.shields.io/github/issues/ahcantarim/xpinc-xamarin-forms.svg?style=for-the-badge
 [issues-url]: https://github.com/ahcantarim/xpinc-xamarin-forms/issues
 [license-shield]: https://img.shields.io/github/license/ahcantarim/xpinc-xamarin-forms.svg?style=for-the-badge
-[license-url]: https://github.com/ahcantarim/xpinc-xamarin-forms/blob/master/LICENSE.txt
+[license-url]: https://github.com/ahcantarim/xpinc-xamarin-forms/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ahcantarim
 
