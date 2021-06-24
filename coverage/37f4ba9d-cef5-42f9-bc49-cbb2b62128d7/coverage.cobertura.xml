@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.9264" branch-rate="0.8076000000000001" version="1.9" timestamp="1624494175" lines-covered="126" lines-valid="136" branches-covered="21" branches-valid="26">
+  <sources>
+    <source>C:\github\ahcantarim\xpinc-xamarin-forms\src\XPInc.Cantarim.UI.Mobile.CrossPlatform\XPInc.Cantarim.UI.Mobile.CrossPlatform\</source>
+  </sources>
+  <packages>
+    <package name="XPInc.Cantarim.UI.Mobile.CrossPlatform" line-rate="0.9264" branch-rate="0.8076000000000001" complexity="54">
+      <classes>
+        <class name="XPInc.Cantarim.UI.Mobile.CrossPlatform.ViewModels.HistoricoOrdemViewModel" filename="ViewModels\HistoricoOrdemViewModel.cs" line-rate="0.9" branch-rate="0.7222" complexity="25">
+          <methods>
+            <method name="get__ordemDictionary" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="2707" branch="False" />
+              </lines>
+            </method>
+            <method name="get_OrdemCollection" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="479" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TotalQuantidade" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="464" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TotalQuantidadeDisponivel" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="32" hits="468" branch="False" />
+              </lines>
+            </method>
+            <method name="AtualizarQuantidadesTotais" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="95" hits="467" branch="False" />
+                <line number="96" hits="35132" branch="False" />
+                <line number="97" hits="35132" branch="False" />
+                <line number="100" hits="69797" branch="False" />
+                <line number="101" hits="467" branch="False" />
+              </lines>
+            </method>
+            <method name="IncluirOrdem" signature="(System.Boolean)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="108" hits="451" branch="False" />
+                <line number="109" hits="451" branch="False" />
+                <line number="111" hits="451" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="40" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="112" hits="451" branch="False" />
+                <line number="113" hits="451" branch="False" />
+                <line number="114" hits="451" branch="False" />
+                <line number="115" hits="451" branch="False" />
+              </lines>
+            </method>
+            <method name="AlterarOrdem" signature="(System.Boolean)" line-rate="1" branch-rate="1" complexity="8">
+              <lines>
+                <line number="118" hits="150" branch="False" />
+                <line number="119" hits="150" branch="False" />
+                <line number="121" hits="150" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="19" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="122" hits="134" branch="False" />
+                <line number="124" hits="16" branch="False" />
+                <line number="126" hits="566" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="149" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="127" hits="267" branch="False" />
+                <line number="128" hits="267" branch="False" />
+                <line number="129" hits="267" branch="False" />
+                <line number="131" hits="267" branch="False" />
+                <line number="132" hits="267" branch="False" />
+                <line number="134" hits="267" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="113" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="135" hits="150" branch="False" />
+                <line number="136" hits="267" branch="False" />
+                <line number="138" hits="16" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="156" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="139" hits="16" branch="False" />
+                <line number="140" hits="16" branch="False" />
+                <line number="141" hits="16" branch="False" />
+                <line number="145" hits="16" branch="False" />
+                <line number="147" hits="150" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;get_IniciarCronometroCommand&gt;b__17_0" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="39" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;ExecutarIniciarCronometroCommand&gt;b__18_1" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="57" hits="0" branch="False" />
+                <line number="58" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="22" hits="2707" branch="False" />
+            <line number="28" hits="479" branch="False" />
+            <line number="30" hits="464" branch="False" />
+            <line number="32" hits="468" branch="False" />
+            <line number="95" hits="467" branch="False" />
+            <line number="96" hits="35132" branch="False" />
+            <line number="97" hits="35132" branch="False" />
+            <line number="100" hits="69797" branch="False" />
+            <line number="101" hits="467" branch="False" />
+            <line number="108" hits="451" branch="False" />
+            <line number="109" hits="451" branch="False" />
+            <line number="111" hits="451" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="40" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="112" hits="451" branch="False" />
+            <line number="113" hits="451" branch="False" />
+            <line number="114" hits="451" branch="False" />
+            <line number="115" hits="451" branch="False" />
+            <line number="118" hits="150" branch="False" />
+            <line number="119" hits="150" branch="False" />
+            <line number="121" hits="150" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="19" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="122" hits="134" branch="False" />
+            <line number="124" hits="16" branch="False" />
+            <line number="126" hits="566" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="149" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="127" hits="267" branch="False" />
+            <line number="128" hits="267" branch="False" />
+            <line number="129" hits="267" branch="False" />
+            <line number="131" hits="267" branch="False" />
+            <line number="132" hits="267" branch="False" />
+            <line number="134" hits="267" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="113" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="135" hits="150" branch="False" />
+            <line number="136" hits="267" branch="False" />
+            <line number="138" hits="16" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="156" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="139" hits="16" branch="False" />
+            <line number="140" hits="16" branch="False" />
+            <line number="141" hits="16" branch="False" />
+            <line number="145" hits="16" branch="False" />
+            <line number="147" hits="150" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="58" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="XPInc.Cantarim.UI.Mobile.CrossPlatform.ViewModels.HistoricoOrdemViewModel/&lt;&lt;ExecutarIniciarCronometroCommand&gt;b__18_0&gt;d" filename="ViewModels\HistoricoOrdemViewModel.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="XPInc.Cantarim.UI.Mobile.CrossPlatform.Models.OrdemModel" filename="Models\OrdemModel.cs" line-rate="1" branch-rate="1" complexity="12">
+          <methods>
+            <method name="get_DataHora" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="475" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Assessor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="476" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Conta" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="475" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Ativo" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="476" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Tipo" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="476" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Quantidade" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="105316" branch="False" />
+              </lines>
+            </method>
+            <method name="get_QuantidadeDisponivel" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="69598" branch="False" />
+              </lines>
+            </method>
+            <method name="get_QuantidadeExecutada" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="71195" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Valor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="476" branch="False" />
+              </lines>
+            </method>
+            <method name="SimularAlteracaoQuantidadeExecutada" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="34" hits="272" branch="False" />
+                <line number="35" hits="272" branch="False" />
+                <line number="37" hits="272" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="36" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="38" hits="153" branch="False" />
+                <line number="39" hits="272" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.String,System.String,System.String,System.String,System.Int32,System.Double)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="45" hits="475" branch="False" />
+                <line number="46" hits="475" branch="False" />
+                <line number="47" hits="475" branch="False" />
+                <line number="48" hits="475" branch="False" />
+                <line number="49" hits="475" branch="False" />
+                <line number="50" hits="475" branch="False" />
+                <line number="51" hits="475" branch="False" />
+                <line number="52" hits="475" branch="False" />
+                <line number="53" hits="475" branch="False" />
+                <line number="54" hits="475" branch="False" />
+                <line number="55" hits="475" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="475" branch="False" />
+            <line number="13" hits="476" branch="False" />
+            <line number="15" hits="475" branch="False" />
+            <line number="17" hits="476" branch="False" />
+            <line number="19" hits="476" branch="False" />
+            <line number="21" hits="105316" branch="False" />
+            <line number="23" hits="69598" branch="False" />
+            <line number="25" hits="71195" branch="False" />
+            <line number="27" hits="476" branch="False" />
+            <line number="34" hits="272" branch="False" />
+            <line number="35" hits="272" branch="False" />
+            <line number="37" hits="272" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="36" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="38" hits="153" branch="False" />
+            <line number="39" hits="272" branch="False" />
+            <line number="45" hits="475" branch="False" />
+            <line number="46" hits="475" branch="False" />
+            <line number="47" hits="475" branch="False" />
+            <line number="48" hits="475" branch="False" />
+            <line number="49" hits="475" branch="False" />
+            <line number="50" hits="475" branch="False" />
+            <line number="51" hits="475" branch="False" />
+            <line number="52" hits="475" branch="False" />
+            <line number="53" hits="475" branch="False" />
+            <line number="54" hits="475" branch="False" />
+            <line number="55" hits="475" branch="False" />
+          </lines>
+        </class>
+        <class name="XPInc.Cantarim.UI.Mobile.CrossPlatform.Mock.OrdemMock" filename="Mock\OrdemMock.cs" line-rate="1" branch-rate="1" complexity="7">
+          <methods>
+            <method name="SimularCriacaoOrdem" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="475" branch="False" />
+                <line number="20" hits="475" branch="False" />
+                <line number="21" hits="475" branch="False" />
+                <line number="22" hits="475" branch="False" />
+                <line number="23" hits="475" branch="False" />
+                <line number="24" hits="475" branch="False" />
+                <line number="25" hits="475" branch="False" />
+                <line number="26" hits="475" branch="False" />
+              </lines>
+            </method>
+            <method name="VerificarAcaoRealizar" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="34" hits="5" branch="False" />
+                <line number="35" hits="5" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="7" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="36" hits="1" branch="False" />
+                <line number="38" hits="4" branch="False" />
+                <line number="39" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="VerificarCargaTrabalho" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="47" hits="27" branch="False" />
+                <line number="48" hits="27" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="10" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="49" hits="4" branch="False" />
+                <line number="51" hits="23" branch="False" />
+                <line number="52" hits="27" branch="False" />
+              </lines>
+            </method>
+            <method name="ObterQuantidadeOrdemSimular" signature="(System.Int32)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="60" hits="25" branch="False" />
+                <line number="61" hits="25" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="12" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="62" hits="14" branch="False" />
+                <line number="63" hits="14" branch="False" />
+                <line number="66" hits="11" branch="False" />
+                <line number="67" hits="11" branch="False" />
+                <line number="68" hits="11" branch="False" />
+                <line number="70" hits="25" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="475" branch="False" />
+            <line number="20" hits="475" branch="False" />
+            <line number="21" hits="475" branch="False" />
+            <line number="22" hits="475" branch="False" />
+            <line number="23" hits="475" branch="False" />
+            <line number="24" hits="475" branch="False" />
+            <line number="25" hits="475" branch="False" />
+            <line number="26" hits="475" branch="False" />
+            <line number="34" hits="5" branch="False" />
+            <line number="35" hits="5" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="7" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="36" hits="1" branch="False" />
+            <line number="38" hits="4" branch="False" />
+            <line number="39" hits="5" branch="False" />
+            <line number="47" hits="27" branch="False" />
+            <line number="48" hits="27" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="10" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="49" hits="4" branch="False" />
+            <line number="51" hits="23" branch="False" />
+            <line number="52" hits="27" branch="False" />
+            <line number="60" hits="25" branch="False" />
+            <line number="61" hits="25" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="12" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="62" hits="14" branch="False" />
+            <line number="63" hits="14" branch="False" />
+            <line number="66" hits="11" branch="False" />
+            <line number="67" hits="11" branch="False" />
+            <line number="68" hits="11" branch="False" />
+            <line number="70" hits="25" branch="False" />
+          </lines>
+        </class>
+        <class name="XPInc.Cantarim.UI.Mobile.CrossPlatform.Mock.RandomGenerators.SorteioEnumMock`1" filename="Mock\RandomGenerators\SorteioEnumMock.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="GenerateRandomValue" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="29" branch="False" />
+                <line number="21" hits="29" branch="False" />
+                <line number="24" hits="29" branch="False" />
+                <line number="25" hits="29" branch="False" />
+                <line number="28" hits="29" branch="False" />
+                <line number="29" hits="29" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="29" branch="False" />
+            <line number="21" hits="29" branch="False" />
+            <line number="24" hits="29" branch="False" />
+            <line number="25" hits="29" branch="False" />
+            <line number="28" hits="29" branch="False" />
+            <line number="29" hits="29" branch="False" />
+          </lines>
+        </class>
+        <class name="XPInc.Cantarim.UI.Mobile.CrossPlatform.Mock.RandomGenerators.SorteioOrdemMock" filename="Mock\RandomGenerators\SorteioOrdemMock.cs" line-rate="1" branch-rate="1" complexity="7">
+          <methods>
+            <method name="DrawAssessor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="475" branch="False" />
+                <line number="18" hits="475" branch="False" />
+                <line number="19" hits="475" branch="False" />
+              </lines>
+            </method>
+            <method name="DrawConta" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="475" branch="False" />
+                <line number="27" hits="475" branch="False" />
+                <line number="28" hits="475" branch="False" />
+                <line number="29" hits="475" branch="False" />
+              </lines>
+            </method>
+            <method name="DrawAtivo" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="36" hits="475" branch="False" />
+                <line number="37" hits="475" branch="False" />
+                <line number="38" hits="475" branch="False" />
+              </lines>
+            </method>
+            <method name="DrawTipo" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="45" hits="475" branch="False" />
+                <line number="46" hits="475" branch="False" />
+                <line number="47" hits="475" branch="False" />
+              </lines>
+            </method>
+            <method name="DrawQuantidadeLotePadrao" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="54" hits="475" branch="False" />
+                <line number="55" hits="475" branch="False" />
+                <line number="56" hits="475" branch="False" />
+              </lines>
+            </method>
+            <method name="DrawQuantidadeLoteFracionario" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="63" hits="272" branch="False" />
+                <line number="64" hits="272" branch="False" />
+                <line number="65" hits="272" branch="False" />
+                <line number="66" hits="272" branch="False" />
+              </lines>
+            </method>
+            <method name="DrawValor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="73" hits="475" branch="False" />
+                <line number="74" hits="475" branch="False" />
+                <line number="76" hits="475" branch="False" />
+                <line number="77" hits="475" branch="False" />
+                <line number="79" hits="475" branch="False" />
+                <line number="80" hits="475" branch="False" />
+                <line number="82" hits="475" branch="False" />
+                <line number="83" hits="475" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="475" branch="False" />
+            <line number="18" hits="475" branch="False" />
+            <line number="19" hits="475" branch="False" />
+            <line number="26" hits="475" branch="False" />
+            <line number="27" hits="475" branch="False" />
+            <line number="28" hits="475" branch="False" />
+            <line number="29" hits="475" branch="False" />
+            <line number="36" hits="475" branch="False" />
+            <line number="37" hits="475" branch="False" />
+            <line number="38" hits="475" branch="False" />
+            <line number="45" hits="475" branch="False" />
+            <line number="46" hits="475" branch="False" />
+            <line number="47" hits="475" branch="False" />
+            <line number="54" hits="475" branch="False" />
+            <line number="55" hits="475" branch="False" />
+            <line number="56" hits="475" branch="False" />
+            <line number="63" hits="272" branch="False" />
+            <line number="64" hits="272" branch="False" />
+            <line number="65" hits="272" branch="False" />
+            <line number="66" hits="272" branch="False" />
+            <line number="73" hits="475" branch="False" />
+            <line number="74" hits="475" branch="False" />
+            <line number="76" hits="475" branch="False" />
+            <line number="77" hits="475" branch="False" />
+            <line number="79" hits="475" branch="False" />
+            <line number="80" hits="475" branch="False" />
+            <line number="82" hits="475" branch="False" />
+            <line number="83" hits="475" branch="False" />
+          </lines>
+        </class>
+        <class name="XPInc.Cantarim.UI.Mobile.CrossPlatform.Mock.RandomGenerators.SorteioStringMock" filename="Mock\RandomGenerators\SorteioStringMock.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="PickRandomValue" signature="(System.String,System.Char)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="1900" branch="False" />
+                <line number="19" hits="1900" branch="False" />
+                <line number="20" hits="1900" branch="False" />
+                <line number="21" hits="1900" branch="False" />
+                <line number="22" hits="1900" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="1900" branch="False" />
+            <line number="19" hits="1900" branch="False" />
+            <line number="20" hits="1900" branch="False" />
+            <line number="21" hits="1900" branch="False" />
+            <line number="22" hits="1900" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

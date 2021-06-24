@@ -47,12 +47,10 @@ namespace XPInc.Cantarim.UI.Mobile.CrossPlatform.ViewModels
         {
             try
             {
-                //TODO: 2 threads?
                 Task.Run(async () =>
                    {
                        while (true)
                        {
-                           //await Device.InvokeOnMainThreadAsync(() =>
                            Device.BeginInvokeOnMainThread(() =>
                            {
                                SimularAlteracaoHistoricoOrdem();
