@@ -30,6 +30,9 @@ namespace XPInc.Cantarim.UI.Mobile.CrossPlatform.Models
 
         #region Comportamentos
 
+        /// <summary>
+        /// Simula uma alteração de quantidade executada de forma aleatória (incrementando o valor atual).
+        /// </summary>
         public void SimularAlteracaoQuantidadeExecutada()
         {
             QuantidadeExecutada += SorteioOrdemMock.DrawQuantidadeLoteFracionario();

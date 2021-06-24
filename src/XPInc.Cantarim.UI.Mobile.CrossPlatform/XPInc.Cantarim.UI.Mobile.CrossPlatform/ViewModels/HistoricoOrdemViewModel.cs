@@ -56,6 +56,11 @@ namespace XPInc.Cantarim.UI.Mobile.CrossPlatform.ViewModels
                                SimularAlteracaoHistoricoOrdem();
                            });
 
+
+                           // Força a coleta de lixo para tentar recuperar toda a memória que estiver inacessível.
+                           GC.Collect();
+
+                           // Aguarda um tempo em milissegundos até a execução da rotina novamente.
                            await Task.Delay(TimeSpan.FromMilliseconds(ConfigMock.INTERVALO_ATUALIZACAO_MILISSEGUNDOS));
                        }
                    });
@@ -66,6 +71,9 @@ namespace XPInc.Cantarim.UI.Mobile.CrossPlatform.ViewModels
             }
         }
 
+        /// <summary>
+        /// Define qual ação deverá ser executada ma simulação. Pode incluir uma ordem e/ou alterar ordens existentes.
+        /// </summary>
         [ExcludeFromCodeCoverage]
         private void SimularAlteracaoHistoricoOrdem()
         {
@@ -89,6 +97,9 @@ namespace XPInc.Cantarim.UI.Mobile.CrossPlatform.ViewModels
             }
         }
 
+        /// <summary>
+        /// Atualiza as propriedades que são utilizadas para renderizar a tela da aplicação.
+        /// </summary>
         private void AtualizarQuantidadesTotais()
         {
             TotalQuantidade = _ordemDictionary.Sum(ordem => ordem.Value.Quantidade);
@@ -102,6 +113,10 @@ namespace XPInc.Cantarim.UI.Mobile.CrossPlatform.ViewModels
 
         #region Métodos públicos
 
+        /// <summary>
+        /// Inclui uma nova ordem aleatória no dicionário de dados.
+        /// </summary>
+        /// <param name="forceBindingRefresh"></param>
         public void IncluirOrdem(bool forceBindingRefresh = true)
         {
             _ordemDictionary.TryAdd(Guid.NewGuid().ToString(), OrdemMock.SimularCriacaoOrdem());
@@ -112,6 +127,10 @@ namespace XPInc.Cantarim.UI.Mobile.CrossPlatform.ViewModels
             }
         }
 
+        /// <summary>
+        /// Altera uma ou mais ordens aleatórias do dicionário de dados.
+        /// </summary>
+        /// <param name="forceBindingRefresh"></param>
         public void AlterarOrdem(bool forceBindingRefresh = true)
         {
             var totalOrdens = _ordemDictionary.Count;
@@ -123,14 +142,18 @@ namespace XPInc.Cantarim.UI.Mobile.CrossPlatform.ViewModels
 
             for (int index = 0; index < quantidadeOrdemAlterar; index++)
             {
+                // Define um índice aleatório de ordem no dicionário de dados, para simular alteração do item correspondente.
                 var random = new Random();
                 var chosenIndex = random.Next(0, _ordemDictionary.Count);
 
                 var ordemAtual = _ordemDictionary.ElementAt(chosenIndex);
                 ordemAtual.Value.SimularAlteracaoQuantidadeExecutada();
 
+                // Se a ordem foi totalmente executada (não há mais quantidade disponível), o item é removido do dicionário de dados.
                 if (ordemAtual.Value.QuantidadeDisponivel == 0)
+                {
                     _ordemDictionary.TryRemove(ordemAtual.Key, out _);
+                }
             }
 
             if (forceBindingRefresh)
