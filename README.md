@@ -207,7 +207,7 @@ No entanto, há diferenças perceptíveis quanto ao uso de memória e CPU:
 
 O uso de memória teve um `pico de 120 MB`, mantendo-se sempre constante após inicialização e carga inicial da aplicação.
 
-O uso de CPU teve um `pico de 42%`, sendo bem variável e mantendo-se e uma média `abaixo de ~25%`.
+O uso de CPU teve um `pico de 42%`, sendo bem variável e mantendo-se em uma média `abaixo de ~25%`.
 
 [![Diagnostic Tools UWP][screenshot-diagnostic-tools-uwp]][screenshot-diagnostic-tools-uwp]
 
