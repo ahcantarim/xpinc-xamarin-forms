@@ -41,11 +41,23 @@
         </ul>
     </li>
     <li><a href="#estrutura-da-aplicação">Estrutura da aplicação</a></li>
-    <li><a href="#execução-da-aplicação">Execução da aplicação</a></li>
+    <li>
+        <a href="#execução-da-aplicação">Execução da aplicação</a>
+        <ul>
+            <li><a href="#exemplo-da-execução-do-projeto-alvo-uwp">Exemplo da execução do projeto alvo UWP</a></li>
+            <li><a href="#exemplo-da-execução-do-projeto-alvo-wpf">Exemplo da execução do projeto alvo WPF</a></li>
+        </ul>
+    </li>
     <li><a href="#teste-de-aumento-de-carga">Teste de aumento de carga</a></li>
     <li><a href="#testes-unitários">Testes unitários</a></li>
     <li><a href="#análise-de-cobertura-de-código">Análise de cobertura de código</a></li>
-    <li><a href="#análise-de-performance">Análise de performance</a></li>
+    <li>
+        <a href="#análise-de-performance">Análise de performance</a>
+         <ul>
+            <li><a href="#diagnóstico-do-projeto-alvo-uwp">Diagnóstico do projeto alvo UWP</a></li>
+            <li><a href="#diagnóstico-do-projeto-alvo-wpf">Diagnóstico do projeto alvo WPF</a></li>
+        </ul>
+    </li>
     <li><a href="#licença">Licença</a></li>
     <li><a href="#contato">Contato</a></li>
 </ol>
@@ -182,12 +194,30 @@ Com base nos testes unitários escritos para validação do código, foi gerado 
 
 Atualmente, o projeto conta com uma cobertura de código de +92%:
 
-[![BLA][screenshot-code-coverage]][screenshot-code-coverage]
+[![Coverlet Report][screenshot-code-coverage]][screenshot-code-coverage]
 
 
 ## Análise de performance
 
-`TODO: Imagens e análise`
+É possível notar que, em ambos os projetos alvo, o desempenho é muito parecido.
+
+No entanto, há diferenças perceptíveis quanto ao uso de memória e CPU:
+
+#### Diagnóstico do projeto alvo UWP
+
+O uso de memória teve um `pico de 120 MB`, mantendo-se sempre constante após inicialização e carga inicial da aplicação.
+
+O uso de CPU teve um `pico de 42%`, sendo bem variável e mantendo-se e uma média `abaixo de ~25%`.
+
+[![Diagnostic Tools UWP][screenshot-diagnostic-tools-uwp]][screenshot-diagnostic-tools-uwp]
+
+#### Diagnóstico do projeto alvo WPF
+
+O uso de memória teve um `pico de 128 MB`, sendo bem variável e, na média, até melhor que a aplicação `UWP`.
+
+O uso de CPU teve um `pico de 38%`, mantendo-se sempre constante e em uma média `acima de ~25%`.
+
+[![Diagnostic Tools WPF][screenshot-diagnostic-tools-wpf]][screenshot-diagnostic-tools-wpf]
 
 
 ## Licença
@@ -219,6 +249,8 @@ André Cantarim
 [linkedin-url]: https://linkedin.com/in/ahcantarim
 
 [screenshot-code-coverage]: .github/code-coverage.png
+[screenshot-diagnostic-tools-uwp]: .github/diagnostic-tools-uwp.png
+[screenshot-diagnostic-tools-wpf]: .github/diagnostic-tools-wpf.png
 [screenshot-output-window]: .github/output-window.png
 [screenshot-sample-uwp]: .github/sample-uwp.png
 [screenshot-sample-wpf]: .github/sample-wpf.png
